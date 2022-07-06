@@ -1,30 +1,79 @@
 <template>
-<section id="jumbotron">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-lg-4 text-white">
-                <span>Category</span>
-                <h1>Lorem ipsum dolor sit amet,consetetur</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dicta officiis quo quae. Obcaecati soluta maxime quaerat iste officia suscipit sunt! Accusantium error id nam sunt! Laborum nemo maxime incidunt.</p>
-                <button class="btn btn-success rounded-pill">Read More</button>
+
+    <div>
+    <!--  realizzazione di un carosello di immagini con vuejs e scss, utilizzando i props e le funzione per lo scorrimento delle immagini -->
+        <div class="carousel-inner text-center">
+            <div v-for="(item, index) in items" :key="index" class="carousel-item" :class="{ active: currentSlide == index }">
+                <img class="d-block w-100" :src="item.img" />
+                <div class="container">
+                <div class="carousel-caption text-left">
+                    <h1>{{ item.title }}</h1>
+                    <p class="d-none d-md-block">{{ item.caption }}</p>
+                    <button type="button" class="btn btn-success rounded-pill">Read more</button>
+                </div>
+                </div>
             </div>
+            <span class="carousel-control-prev" role="button" @click="prevSlide">
+                <i class="fas fa-angle-left"></i>
+                <span class="sr-only">Previous</span>
+            </span>
+            <span class="carousel-control-next" role="button" @click="nextSlide">
+                <i class="fas fa-angle-right"></i>
+                <span class="sr-only">Next</span>
+            </span>
         </div>
     </div>
-</section>
+
 
 </template>
 
 <script>
 export default {
+name: "IndexJumbotron",
+props: ["items"],
+data() {
+    return {
+    currentSlide: 0,
+    timerId: null,
+    };
+},
 
-}
+methods: {
+    isCurrent(value) {
+    return this.currentSlide == value;
+    },
+    setCurrent(value) {
+    this.currentSlide = value;
+    },
+    nextSlide() {
+    this.currentSlide =
+        this.currentSlide < this.items.length - 1 ? this.currentSlide + 1 : 0;
+    },
+    prevSlide() {
+    this.currentSlide =
+        this.currentSlide > 0 ? this.currentSlide - 1 : this.items.length - 1;
+    },
+    
+},
+
+};
+
+
 </script>
 
 <style lang="scss" scoped>
-#jumbotron{
-    background-image: url(../assets/lago.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 15rem 0 5rem; 
+
+    button:hover{
+        background-color: white;
+        color: black;
+    }
+
+.carousel-control-prev i,
+.carousel-control-next i {
+  color: white;
+  font-size: 3rem;
 }
+  .carousel-caption {
+    z-index: 1;
+  }
 </style>

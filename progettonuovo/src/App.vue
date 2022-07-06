@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    
     <IndexHeader />
-
-      <IndexJumbotron />
     <main>
-      <IndexMain />
+      <IndexJumbotron />
+      <HomePage />
     </main>
+    
+    <indexMain />
     <IndexFooter/>
   </div>
 </template>
@@ -14,15 +14,17 @@
 <script>
 import IndexHeader from './components/indexHeader.vue'
 import IndexJumbotron from './components/indexJumbotron.vue'
-import IndexMain from './components/indexMain.vue'
 import IndexFooter from './components/indexFooter.vue'
+import indexMain from './components/indexMain.vue'
+import HomePage from './pages/HomePage.vue'
 export default {
   name: 'App',
   components: {
     IndexHeader,
     IndexJumbotron,
-    IndexMain,
-    IndexFooter
+    indexMain,
+    IndexFooter,
+    HomePage
 }
 }
 </script>

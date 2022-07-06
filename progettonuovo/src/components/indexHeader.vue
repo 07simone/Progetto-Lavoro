@@ -1,11 +1,16 @@
 <template>
+
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!--  implementazione header utilizzando nav-bar importata da bootstrap-->
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <img class="img" src="../assets/png-clipart-logo-brand.png" alt="">
         <div class="collapse navbar-collapse" id="navbarText">
-              <h4>Nature Agency</h4>
+              <h4><span class="fw-bold">Nature</span> Agency</h4>
         </div>
+              <button class="navbar-toggler" style="color:gray" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-align-justify"></i>
+              </button>
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mx-3 mb-3 mb-lg-0 ">
                   <li class="nav-item">
@@ -35,14 +40,26 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'indexHeader',
   
 }
 </script>
 
 
 <style scoped lang="scss">
+.navbar-toggler {
+  color: gray;
+  background-color: rgb(194, 184, 184);
+}
 .img{
   width: 60px
+}
+
+.btn:hover{
+  background-color: black;
+}
+
+ul li a{
+  color: black;
 }
 </style>
