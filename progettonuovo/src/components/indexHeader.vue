@@ -2,7 +2,7 @@
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <img class="img" src="../assets/nature.jpg" alt="">
+        <img class="img" src="../assets/png-clipart-logo-brand.png" alt="">
         <div class="collapse navbar-collapse" id="navbarText">
               <h4>Nature Agency</h4>
         </div>
