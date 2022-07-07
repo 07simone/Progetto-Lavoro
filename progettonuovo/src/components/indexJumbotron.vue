@@ -6,11 +6,12 @@
             <div v-for="(item, index) in items" :key="index" class="carousel-item" :class="{ active: currentSlide == index }">
                 <img class="d-block w-100" :src="item.img" />
                 <div class="container">
-                <div class="carousel-caption text-left">
-                    <h1>{{ item.title }}</h1>
-                    <p class="d-none d-md-block">{{ item.caption }}</p>
-                    <button type="button" class="btn btn-success rounded-pill">Read more</button>
-                </div>
+                    <div class="carousel-caption text-start">
+                        <h6>{{ item.title }}</h6>
+                        <h1>{{item.subtitle}}</h1>
+                        <p class="d-none d-md-block">{{ item.caption }}</p>
+                        <button type="button" class="btn rounded-pill">Read more</button>
+                    </div>
                 </div>
             </div>
             <span class="carousel-control-prev" role="button" @click="prevSlide">
@@ -62,7 +63,10 @@ methods: {
 </script>
 
 <style lang="scss" scoped>
-
+button{
+    background-color: #218491;
+    color: white;
+}
     button:hover{
         background-color: white;
         color: black;

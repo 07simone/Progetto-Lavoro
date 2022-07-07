@@ -4,8 +4,8 @@
   <!--  implementazione header utilizzando nav-bar importata da bootstrap-->
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <img class="img" src="../assets/natura.jpg" alt="">
-        <div class="collapse navbar-collapse" id="navbarText">
+        <img class="img" src="../assets/Logo.svg" alt="">
+        <div class="collapse navbar-collapse mx-3" id="navbarText">
               <h4><span class="fw-bold">Nature</span> Agency</h4>
         </div>
               <button class="navbar-toggler" style="color:gray" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
                       <a class="nav-link text-dark" aria-current="page" href="#"><i class="fas fa-search"></i></a>
                   </li>
                   <li class="nav-item mx-2">
-                      <button type="button" class="btn btn-success rounded-pill">Contact Us</button>
+                      <button type="button" class="btn  rounded-pill">Contact Us</button>
                   </li>
               </ul>
             </div>
@@ -54,9 +54,13 @@ export default {
 .img{
   width: 60px
 }
-
+.btn{
+  background-color:#218491;
+  color:white
+}
 .btn:hover{
   background-color: black;
+  color:white;
 }
 
 ul li a{

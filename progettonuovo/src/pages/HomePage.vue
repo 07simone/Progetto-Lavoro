@@ -13,18 +13,21 @@ data() {
     sliderData : [
         {
         title: "Category",
+        subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         caption: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laboriosam illum adipisci? Minima laudantium velit repellat quia, iure voluptatem nemo. Quod debitis eaque beatae repellendus veritatis placeat praesentium voluptate consequuntur!",
         img : "https://picsum.photos/seed/dolet/1519/512",
         
         },
         {
         title: "Category",
+        subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         caption: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laboriosam illum adipisci? Minima laudantium velit repellat quia, iure voluptatem nemo. Quod debitis eaque beatae repellendus veritatis placeat praesentium voluptate consequuntur!",
         img : "https://picsum.photos/seed/lorem/1519/512",
         
         },
         {
         title: "Category",
+        subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         caption: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere laboriosam illum adipisci? Minima laudantium velit repellat quia, iure voluptatem nemo. Quod debitis eaque beatae repellendus veritatis placeat praesentium voluptate consequuntur!",
         img : "https://picsum.photos/seed/ipsum/1519/512",
         

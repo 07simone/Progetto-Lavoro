@@ -4,14 +4,14 @@
 <section id="category">
     <div class="container mt-5">
         <div class="row">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-md-6  col-lg-6" style="font-size:0.8rem">
                 <span class="fw-bold">Category</span>
-                <h1 style="color:mediumturquoise" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dicta officiis quo quae. Obcaecati soluta maxime quaerat </h1>
-                <p id="description" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dicta officiis quo quae. Obcaecati soluta maxime quaerat iste officia suscipit sunt! Accusantium error id nam sunt! Laborum nemo maxime incidunt.</p>
-                <button class="btn btn-success rounded-pill">Read More</button>
+                <h1 style="color:#218491" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dicta officiis quo quae. Obcaecati soluta maxime quaerat </h1>
+                <p id="description" style="color:#6F6F6F" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dicta officiis quo quae. Obcaecati soluta maxime quaerat iste officia suscipit sunt! Accusantium error id nam sunt! Laborum nemo maxime incidunt.</p>
+                <button class="btn rounded-pill">Read More</button>
             </div>
             <div class="col-12 col-lg-6 mt-3">
-                <img class="img-fluid" src="../assets/slide04.jpg" alt="">
+                <img class="img-fluid" src="../assets/Photo.png" alt="">
             </div>
         </div>
     </div>
@@ -22,15 +22,15 @@
         <div class="row">
             <div class="col-12">
                 <h3 id="title">Latest from the blog</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, pariatur animi illo architecto laudantium voluptates assumenda tempore. Velit nulla quidem voluptatem, sit optio temporibus ipsum sapiente iusto magni eum rem.</p>
+                <p style="color:#6F6F6F">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, pariatur animi illo architecto laudantium voluptates assumenda tempore. Velit nulla quidem voluptatem, sit optio temporibus ipsum sapiente iusto magni eum rem.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-lg-4 mt-3">
+            <div class="col-12 col-md-6 col-lg-4 mt-3">
                 <div class="card " style="width: 18rem;">
-                    <img src="../assets/strada.jpg"  alt="...">
+                    <img src="../assets/Mask Group 1.png"  alt="...">
                     <div class="card-body">
-                        <h5 class="card-title"> <span id="title">Category</span>  / June 2020, 13</h5>
+                        <h5 class="card-title"> <span id="title">Category</span>  / <span id="date" style="color: #999999">June 2020, 13</span> </h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipis</p>
                         <div class="wrapperRow d-flex">
                             <div class="riga1"></div>
@@ -41,11 +41,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4 mt-3">
+            <div class="col-12 col-md-6  col-lg-4 mt-3">
                 <div class="card " style="width: 18rem;">
-                    <img src="../assets/roccia.jpeg"  alt="...">
+                    <img src="../assets/pexels-pixabay-531321.png"  alt="...">
                     <div class="card-body">
-                        <h5 class="card-title"><span id="title">Category</span> / June 2020, 13</h5>
+                        <h5 class="card-title"><span id="title">Category</span> / <span id="date" style="color: #999999">June 2020, 13</span></h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipis</p>
                         <div class="wrapperRow d-flex">
                             <div class="riga1"></div>
@@ -57,9 +57,9 @@
             </div>
             <div class="col-12 col-lg-4 mt-3">
                 <div class="card " style="width: 18rem;">
-                    <img src="../assets/nebbia.jpeg" alt="...">
+                    <img src="../assets/Schermata 2020-05-22 alle 11.59.13.png" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title"><span id="title">Category</span> / June 2020, 13</h5>
+                        <h5 class="card-title"><span id="title">Category</span> / <span id="date" style="color: #999999">June 2020, 13</span></h5>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipis</p>
                         <div class="wrapperRow d-flex">
                             <div class="riga1"></div>
@@ -100,6 +100,13 @@ export default {
 <style lang="scss" scoped>
 #category{
     padding: 5rem;
+    button{
+        background-color: #218491;
+        color:white;
+        &:hover{
+            background-color: black;
+        }
+    }
 }
 #cardWrapper{
     background-color:rgba(224, 220, 220, 0.986);
@@ -109,14 +116,14 @@ export default {
     }
     .riga{
         height: 2px;
-        background-color: lightseagreen;
+        background-color: #218491;
         margin-top: 1rem;
         margin-left: 25px;
         width: 50px;
     }
     .riga1{
             height: 2px;
-            background-color: lightseagreen;
+            background-color: #218491;
             margin-top: 1rem;
             margin-left: 10px;
             width: 50px;
@@ -135,7 +142,7 @@ export default {
         }
     }
     #title{
-        color: rgb(49, 212, 212);
+        color: #218491;
     }
 }
 .right{
@@ -145,13 +152,16 @@ export default {
     padding: 20rem 0 5rem;
 }
 .left{
-    background-color: aqua;
+    background-color: #218491;
     padding: 7rem 2rem 5rem;
+    color:white
 }
-button:hover{
-    cursor: pointer;
-    transition: background-color 0.5s ease;
-    background-color: white;
-    color:black
+
+#focus{
+    .btn:hover{
+        background-color:white;
+        color:#218491
+    }
 }
+
 </style>
