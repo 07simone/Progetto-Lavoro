@@ -5,13 +5,13 @@
         <div class="row p-5">
             <div class="col-12 col-lg-4">
                 <div class="logo d-flex">
-                    <img class="img" src="../assets/logo2-removebg-preview.png" alt="">
+                    <img class="img" src="../assets/natura.jpg" alt="">
                     <div class="text-white d-flex" >
                         <h4 class="d-flex align-items-center">Nature Agency</h4>
                     </div>
                 </div>
                 <div class="lorem mt-3">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, facere praesentium debitis quod nesciunt doloremque, repudiandae culpa ipsam quasi dolorem vitae fugiat commodi expedita iure accusamus rem reiciendis beatae? Veritatis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, facere praesentium debitis quod nesciunt doloremque.</p>
                 </div>
                 <div class="social">
                     <i class="fab fa-facebook"></i>
@@ -115,6 +115,7 @@ export default {
 <style lang="scss" scoped>
 #footer{
     background-color: black;
+    
     .img{
         width: 100px
     }
@@ -123,6 +124,12 @@ export default {
         i{
             font-size: 30px;
             color: aquamarine;
+        }
+    }
+
+    .lorem{
+        p{
+            color: rgb(158, 156, 156);
         }
     }
 }

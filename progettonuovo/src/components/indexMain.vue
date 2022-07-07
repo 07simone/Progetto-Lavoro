@@ -17,17 +17,17 @@
     </div>
 </section>
 <section id="cardWrapper">
-    <!-- sezione delle card, anch'essa realizzata anche in maniera responsive con l'hover come da voi richiesto-->
+    <!-- sezione delle card, anch'essa realizzata anche in maniera responsive con l'hover-->
     <div class="container mt-5">
         <div class="row">
-            <div class="col-8">
+            <div class="col-12">
                 <h3 id="title">Latest from the blog</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, pariatur animi illo architecto laudantium voluptates assumenda tempore. Velit nulla quidem voluptatem, sit optio temporibus ipsum sapiente iusto magni eum rem.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col col-lg-4 mt-3">
-                <div class="card" style="width: 18rem;">
+            <div class="col-12 col-lg-4 mt-3">
+                <div class="card " style="width: 18rem;">
                     <img src="../assets/strada.jpg"  alt="...">
                     <div class="card-body">
                         <h5 class="card-title"> <span id="title">Category</span>  / June 2020, 13</h5>
@@ -41,8 +41,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-4 mt-3">
-                <div class="card" style="width: 18rem;">
+            <div class="col-12 col-lg-4 mt-3">
+                <div class="card " style="width: 18rem;">
                     <img src="../assets/roccia.jpeg"  alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><span id="title">Category</span> / June 2020, 13</h5>
@@ -55,7 +55,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-4 mt-3">
+            <div class="col-12 col-lg-4 mt-3">
                 <div class="card " style="width: 18rem;">
                     <img src="../assets/nebbia.jpeg" alt="...">
                     <div class="card-body">
