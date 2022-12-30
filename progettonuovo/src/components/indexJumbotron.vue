@@ -6,19 +6,19 @@
             <div v-for="(item, index) in items" :key="index" class="carousel-item" :class="{ active: currentSlide == index }">
                 <img class="d-block w-100" :src="item.img" />
                 <div class="container">
-                    <div class="carousel-caption text-start">
-                        <h6>{{ item.title }}</h6>
-                        <h1>{{item.subtitle}}</h1>
+                    <div class="carousel-caption text-center">
+                        <h6 class="d-none d-md-block">{{ item.title }}</h6>
+                        <h1 class="d-none d-md-block">{{item.subtitle}}</h1>
                         <p class="d-none d-md-block">{{ item.caption }}</p>
                         <button type="button" class="btn rounded-pill">Read more</button>
                     </div>
                 </div>
             </div>
-            <span class="carousel-control-prev" role="button" @click="prevSlide">
+            <span class="carousel-control-prev animated rotateInDownLeft" role="button" @click="prevSlide">
                 <i class="fas fa-angle-left"></i>
                 <span class="sr-only">Previous</span>
             </span>
-            <span class="carousel-control-next" role="button" @click="nextSlide">
+            <span class="carousel-control-next animated rotateInDownRight" role="button" @click="nextSlide">
                 <i class="fas fa-angle-right"></i>
                 <span class="sr-only">Next</span>
             </span>
@@ -29,6 +29,7 @@
 </template>
 
 <script>
+
 export default {
 name: "IndexJumbotron",
 props: ["items"],
@@ -47,16 +48,22 @@ methods: {
     this.currentSlide = value;
     },
     nextSlide() {
-    this.currentSlide =
-        this.currentSlide < this.items.length - 1 ? this.currentSlide + 1 : 0;
+    /* this.currentSlide = */
+        if(this.currentSlide < this.items.length - 1) {
+            this.currentSlide++;
+        } else {
+            this.currentSlide = 0;
+        }
     },
     prevSlide() {
-    this.currentSlide =
-        this.currentSlide > 0 ? this.currentSlide - 1 : this.items.length - 1;
-    },
+    if(this.currentSlide > 0){
+        this.currentSlide--
+    }else{
+        this.currentSlide = this.items.length - 1;
+    }
     
 },
-
+}
 };
 
 
@@ -76,6 +83,7 @@ button{
 .carousel-control-next i {
   color: white;
   font-size: 3rem;
+  
 }
   .carousel-caption {
     z-index: 1;

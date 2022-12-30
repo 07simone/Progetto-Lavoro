@@ -126,7 +126,7 @@ export default {
 
     .lorem{
         p{
-            color: #999999(158, 156, 156);
+            color: white
         }
     }
 }
